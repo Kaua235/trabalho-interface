@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+
+
+<body>
+    <h1 align="center">Formulário de t.i</h1>
+
+    <form class="form-fpv" action="scrip.sql" method="post">
+
+
+        <fieldset class="container">
+            <legend align="center">Dados Pessoais</legend>
+
+            <div>
+                <label>Nome: </label>
+                <input type="text" name="Nome" placeholder="Coloque seu nome">
+                <label>Data de Nacimento: </label>
+                <input type="date" name="DataNasc">
+                <label>E-mail: </label>
+                <input type="email" name="email">
+
+            </div>
+
+            <div>
+                <label>Sobrenome: </label>
+                <input type="text" name="Sobrenome" placeholder="Coloque seu sobrenome">
+                <label>Idade: </label>
+                <input type="number" name="number" minlength="1">
+                <label>Telefone: </label>
+                <input type="tel" name="tel" placeholder="+55(00)99999-9999" maxlength="17">
+            </div>
+        </fieldset>
+
+        <div class="question">
+            <p>Qual tipo de programador vc e?</p>
+            <input type="radio" name="nivel" id="1"> Apaixonado
+            <input type="radio" name="nivel" id="2"> Fanático
+            <input type="radio" name="nivel" id="3"> so por trabalho
+
+            <p>Quem te incetivou a ser programador?</p>
+            <input type="checkbox" name="incentivo" id="1"> Pai/mãe
+            <input type="checkbox" name="incentivo" id="2"> tio/tia
+            <input type="checkbox" name="incentivo" id="3"> irmão/irmã
+            <input type="checkbox" name="incentivo" id="4"> Outro
+
+            <p for="torcedor-flamengo">como e porque você se tornou um programador :</p>
+            <input type="text" id="hist-t.i" name="hist-t.i"><br>
+
+            <p>Você é programador de qual região?</p>
+            <select name="top-região" id="">
+                <option value=""></option>
+                <option value="Sul">Sul</option>
+                <option value="Sudeste">Sudeste</option>
+                <option value="Norte">Norte </option>
+                <option value="Nordeste">Nordeste </option>
+                <option value="Centro-oeste">Centro-oeste</option>
+                <option value="Outro">Outro</option>
+               
+            </select>
+
+            <p>qual a maior loucura ou promessa você já fez para ser programador?</p>
+                <textarea name="proposito" id="" cols="30" rows="3"></textarea>
+            </p>
+
+            <p> qual linguagem vc atua?:</p>
+            <input type="radio" id="camp-brasileiro" name="camp-java" value="java"> java
+            <input type="radio" id="copa-libertadores" name="camp-preferido" value="linux"> linux
+            <input type="radio" id="copa-brasil" name="camp-preferido" value="c++"> c++
+
+            <p>maquina preferida:</p>
+            <input type="text" id="unif-fav" name="unif-fav"><br>
+
+            
+           
+           
+
+            
+
+            <!-- Botões -->
+            <input type="reset" value="Limpar" name="limpar">
+            <input type="submit" value="Enviar" name="Enviar">
+        </div>
+    </form>
+
+</body>`
+
+</html>
